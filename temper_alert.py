@@ -7,8 +7,8 @@ from twilio.rest import Client
 # === Config ===
 BRIGHTNESS_THRESHOLD = 30
 ALERT_SOUND = "alert.wav"
-TO_PHONE = "+923364102966"  
-FROM_PHONE = "+19809817284"  
+TO_PHONE = "Your number"  
+FROM_PHONE = "Twilio number"  
 
 # === Location Fetch ===
 def get_location():
@@ -22,8 +22,8 @@ def get_location():
 
 # === Send SMS via Twilio ===
 def send_sms(message, to_number=TO_PHONE):
-    account_sid = "AC4362365b60a9410716d30db319164dbd"         
-    auth_token = "ce5ceb24713e1c953c32f742bf357d39"   
+    account_sid = "Your SID : Twilio account"         
+    auth_token = "Your auth token"   
 
     try:
         client = Client(account_sid, auth_token)
